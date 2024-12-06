@@ -1,0 +1,771 @@
+/* Student Name: Jitaliben Patel
+   Student Number: C0947231
+   Date: 10th Oct 2024
+*/
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 1em;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 0.2em;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* Navigation Below Banner */
+nav {
+    background-color: #333;
+    text-align: center;
+    margin-top: 10px;
+    /* Increased space from the banner */
+    padding: 0.5em 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.0em;
+    /* Increased space between nav items */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #e5e9fc;
+}
+
+/* Main Section */
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    /* Make the main content block */
+}
+
+main h1 {
+    font-size: 2.5em;
+    /* Adjust font size for main heading */
+    color: black;
+    /* Change color for heading */
+}
+
+main p {
+    font-size: 1.2em;
+    /* Adjust font size for paragraph */
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+legend {
+    font-weight: bold;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #1e5735;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+}
+
+button[type="reset"]:hover {
+    background-color: #aaa;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #e0f7e5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #1e5735;
+    text-decoration: underline;
+}
+
+.specials-banner {
+    /* width: 100%;
+    height: auto;
+    margin-bottom: 20px; */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+#product-of-the-week,
+#weekly-sales,
+#customer-guarantee,
+#reasons-to-buy {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+.product-image,
+.guarantee-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.sale-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sale-item {
+    text-align: center;
+}
+
+.sale-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* About Page Specific Styles */
+
+/* Header Section */
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about h2 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Our Story Section */
+.story h2 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Reasons to Shop With Us Section */
+.reasons h2 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.reasons ol {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Guarantee Section */
+.guarantee h2 {
+    color: black;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.guarantee p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.guarantee strong {
+    font-weight: bold;
+}
+
+/* Team Row Layout */
+.team-row {
+    display: flex;
+    justify-content: space-around;
+    /* Space between members */
+    align-items: center;
+    /* Align vertically */
+    flex-wrap: wrap;
+    /* Wrap on smaller screens */
+    margin-top: 20px;
+}
+
+/* Team Member Styling */
+.team-member {
+    text-align: center;
+    max-width: 250px;
+    /* Increased max-width to accommodate larger images */
+    margin: 10px;
+}
+
+/* Circular Images */
+.team-photo {
+    width: 170px;
+    /* Increased width */
+    height: 170px;
+    /* Increased height */
+    border-radius: 50%;
+    /* Circular shape */
+    margin: 0 auto;
+    /* Center image */
+    display: block;
+    /* Ensures proper centering */
+    object-fit: cover;
+    /* Maintains aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+
+/* Team Member Name */
+.team-member figcaption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.team-photo:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    /* Darker shadow on hover */
+}
+
+/* Team Member Role */
+.team-member p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-row {
+        flex-direction: column;
+        /* Stack members on smaller screens */
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+
+    .team-photo {
+        width: 130px;
+        /* Slightly smaller images on mobile */
+        height: 130px;
+        /* Maintain size ratio */
+    }
+}
+
+
+/* Team Stats Section */
+.team-stats {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.team-stats h3 {
+    text-align: center;
+}
+
+.team-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-stats li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonials p {
+    font-size: 1rem;
+    text-align: right;
+    color: black;
+    /* Dark green */
+}
+
+/* Team Gallery */
+.team-gallery .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.team-gallery figure {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-gallery figure:hover {
+    transform: scale(1.05);
+}
+
+.team-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 70%;
+    /* Smaller width for the name input */
+}
+
+textarea {
+    width: 80%;
+    /* Optional: Adjust width for the message */
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+}
+
+button:hover {
+    background-color: #1e5735;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table caption {
+    font-size: 1.8em;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: black;
+    /* Dark green */
+    color: white;
+    font-weight: bold;
+}
+
+td img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0f7e5;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.media-container div {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.media-container iframe,
+.media-container audio {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    /* Darker shade of black for a modern look */
+    color: #e0f7e5;
+    /* Light greenish color for text */
+    text-align: center;
+    padding: 30px 15px;
+    /* Increased padding for better spacing */
+    font-size: 1em;
+    margin-top: 50px;
+    border-top: 3px solid #e0f7e5;
+    /* Adds a subtle border on top */
+}
+
+footer a {
+    color: #e0f7e5;
+    /* Light greenish color for links */
+    text-decoration: none;
+    font-weight: bold;
+    /* Bold links for emphasis */
+    margin: 0 10px;
+    /* Adds spacing between links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
+    /* Changes link color to white on hover */
+}
+
+/*Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.9em;
+        /* Slightly smaller font for mobile */
+        padding: 20px 10px;
+        /* Less padding on smaller screens */
+    }
+}
+
+/* Mobile - 320px to 480px */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .about p,
+    .story p,
+    .reasons ol,
+    .guarantee p {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .team-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .employee-spotlight article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .employee-spotlight img {
+        margin-bottom: 10px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    td img {
+        display: none;
+        /* Hide product images for smaller screens */
+    }
+}
+
+/* Tablet - 481px to 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .about p,
+    .story p,
+    .reasons ol,
+    .guarantee p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    figcaption {
+        -webkit-animation-name: text-animation;
+        animation-name: text-animation;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+    }
+}
+
+/* Desktop - 769px and above */
+@media screen and (min-width: 769px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .about p,
+    .story p,
+    .reasons ol,
+    .guarantee p {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+}
